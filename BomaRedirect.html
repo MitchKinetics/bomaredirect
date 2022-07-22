@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Boma</title>
+
+    <link rel="stylesheet" href="style.css">
+
+<style>
+body {
+  background-color: #000;
+}
+
+h1 {
+  margin-top: 20%;
+  color: #fff;
+  text-align: center;
+  font-family: "Arial", "Helvetica";
+}
+</style>
+
+
+  </head>
+  <body>
+
+<h1>Redirecting you to Boma TV...</h1>
+
+  <script async src="https://get.geojs.io/v1/ip/geo.js"></script>
+
+
+<script type="application/javascript">
+
+function geoip(json){
+
+  
+    var continent = json.continent_code;
+      var country = json.country_code;
+ 
+    
+    console.log (json.country_code);
+    console.log (continent);
+    
+
+  
+
+    if (country == "ZA") {
+
+       window.location.replace("comingsoon.html");
+
+   } else if (country == "NG") {
+
+       window.location.replace("https://ng.boma.tv");
+
+      } else {
+
+window.location.replace("comingsoon.html");
+
+      };
+   
+ console.log (json.ip);
+    
+ 
+ }
+     
+</script>
+
+  </body>
+</html>
